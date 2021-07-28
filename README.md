@@ -19,12 +19,16 @@ core                              2.26.1
 telemetry                          1.0.6
 ```
 
-## az login
+## az ログイン 
 ```
-## az login
+ブラウザを使ってログイン 
+bash-5.1# az login
 To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code ######## to authenticate.
 ```
-ブラウザを使って認証
+```
+IDを使ってログイン
+bash-5.1# az login --identity
+```
 
 
 ## コマンドを見つける

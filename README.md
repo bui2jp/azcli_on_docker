@@ -7,7 +7,7 @@ https://docs.microsoft.com/ja-jp/cli/azure/run-azure-cli-docker
 ```
 ## install(run) login
 ```
-$ docker run -it mcr.microsoft.com/azure-cli
+$ docker run -it --rm mcr.microsoft.com/azure-cli
 ```
 
 ## version
@@ -59,7 +59,7 @@ bash-5.1# az group delete --name TutorialResources --no-wait
 ```
 
 subscriptionの変更
-list で SubscriptionId を確認して、account set で変更
+account list で SubscriptionId を確認して、account set で変更
 ```
 bash-5.1# az account list --output table
 Name                        CloudName    SubscriptionId                        State    IsDefault
